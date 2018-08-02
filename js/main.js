@@ -1,17 +1,3 @@
-// Test data for verifying the data flow.
-const TEST_DATA = [
-  {
-    id: 1,
-    senderId: "jane",
-    text: "what is your name?"
-  },
-  {
-    id: 2,
-    senderId: "john",
-    text: "John, if I may"
-  }
-];
-
 const instanceLocator = "v1:us1:aaa475a4-262e-4c07-a366-bc4e617d0afb";
 const testToken = "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/aaa475a4-262e-4c07-a366-bc4e617d0afb/token";
 const roomId = 12972338;
@@ -21,7 +7,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      messages: TEST_DATA
+      messages: []
     }
     this.sendMessage = this.sendMessage.bind(this)
   }
